@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoItem from './TodoItem';
 
 TodoList.propTypes = {
   
@@ -7,7 +8,7 @@ TodoList.propTypes = {
 function TodoList() {
   return (
     <div>
-      
+      <TodoItem />
     </div>
   );
 }

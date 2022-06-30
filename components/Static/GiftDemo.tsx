@@ -11,7 +11,9 @@ const gifts =[
 //Gọi callBack sau khi component thêm element vào DOM
 //2. useEffect(callback, [])
 // Chỉ gọi callback 1 lần sau khi component mouthed
-//3. useEffect(callback, [deps])
+//3. useEffect(callback, [deps]), 
+
+  //change type gọi lại callback
 
 //callback sẽ được goiij lại mỗi khi deps thay đổi 
 
@@ -52,6 +54,7 @@ function GiftDemo() {
       setLists(lists)
     }) 
   }, [type])
+
 
 
 

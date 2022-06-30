@@ -1,9 +1,9 @@
 import React from 'react';
-import GiftDemo from '../components/Static/GiftDemo';
+import TodoList from '../components/TodoList/TodoList';
 
 function giftFunction() {
   return (
-    <GiftDemo />
+    <TodoList />
   );
 }
 
