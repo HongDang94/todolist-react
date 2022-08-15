@@ -1,31 +1,19 @@
-import React from 'react';
+import React from "react";
 
-const lists = [
-  {
-    id: 1,
-    name: "di choi 1"
-  },
-  {
-    id: 2,
-    name: "di choi d"
-  },
-  {
-    id: 3,
-    name: "di  3"
-  }
+interface ITodoItemProps {
+	toDoList: TodoList[];
+}
 
-]
-function TodoItem() {
-  return (
-    <div>
-      <ul>
-        {lists.map((list) => (
-          <li key={list.id}>{list.name}</li>
-        ))}
-       
-      </ul>
-    </div>
-  );
+function TodoItem({ toDoList }: ITodoItemProps) {
+	return (
+		<div>
+			<ul>
+				{toDoList.map((item) => (
+					<li key={item.id}>{item.title}</li>
+				))}
+			</ul>
+		</div>
+	);
 }
 
 export default TodoItem;
